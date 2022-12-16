@@ -1,0 +1,131 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #555;
+}
+div.page{
+    display: flex;
+}
+header{
+    width: 26vw;
+    height: 100vh;
+    background-color: black;
+    border-right: 1px solid gray;
+}
+i{
+    color: rgb(212, 212, 212);
+}
+p{
+    color: rgb(255, 255, 255);
+}
+.header-container{
+    /* background-color: rgb(72, 72, 72); */
+    height: 100%;
+    width: 64%;
+    float: right;
+}
+div.twitter-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem 0;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+div.twitter-icon:hover{
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgba(135, 207, 235, 0.111);
+}
+
+.fa-twitter{
+    font-size: 1.8rem;
+}
+div.icon{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.capsule{
+    padding: 0.8rem;
+    padding-right: 2rem;
+    max-width: min-content;
+    display: flex;
+    gap: 1.2rem;
+    border-radius: 10rem;
+    align-items: center;
+}
+.capsule > i {
+    font-size: 1.3rem;
+}
+.capsule-text{
+    font-size: 1.3rem;
+}
+.capsule:hover{
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: rgb(128, 128, 128, 0.242);
+}
+.tweet-button{
+    margin: 0.5rem 0;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 85%;
+    border-radius: 10rem;
+    border: none;
+    color: white;
+    background-color: rgb(29 155 240);
+}
+.tweet-button:hover{
+    cursor: pointer;
+    background-color: rgb(17, 129, 204);
+    transition: 0.4s;
+}
+.user{
+    margin-top: 6rem;
+    width: 90%;    
+    padding: 0.5rem;
+    border-radius: 10rem;
+    display: flex;
+    align-items: center;
+    
+}
+.user:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.242);
+}
+img.profile-pic{
+    margin-right: 0.7rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+p.name{
+    font-weight: bold;
+}
+p.username{
+    color: rgb(163, 163, 163);
+}
+main{
+    width: 74vw;
+    height: 100vh;
+    background-color: black;
+}
+div.sticky{
+    width: 47%;
+    height: 100%;
+    border-left: 1px solid gray;
+    float: right;
+}
+.ellipsis{
+    margin-left: 4rem;
+}
