@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="https://friconix.com/cdn/friconix-0.2404.js"> </script>
+    <link rel="shortcut icon" href="twitter.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Home / Twitter</title>
 </head>
@@ -58,21 +57,70 @@
                     </div>
                 </nav>
                 <div class="user">
-                        <img class="profile-pic" src="images.jpg" alt="ha-rshh">
-                        <div class="user-details">
-                            <p class="name">
-                                Harsh
-                            </p>
-                            <p class="username">@ha_rshh</p>
-                        </div>
-                        <div class="more">
-                            <i class="fi-xwsuxl-ellipsis ellipsis"></i>
-                        </div>
+                    <img class="profile-pic" src="images.jpg" alt="ha-rshh">
+                    <div class="user-details">
+                        <p class="name">
+                            Harsh
+                        </p>
+                        <p class="username">@ha_rshh</p>
+                    </div>
+                    <div class="more">
+                        <i class="fi-xwsuxl-ellipsis ellipsis"></i>
+                    </div>
                 </div>
-            </div>  
+            </div>
         </header>
+
+        <!-- main container -->
+
         <main>
-            <div class="sticky"></div>
+            <div class="main-header">
+                <div class="heading-home">
+                    <h3>Home</h3>
+                </div>
+                <div class="heading-top-tweets">
+                    <div class="top-tweets">
+                        <img src="sparkle.png" alt="top-tweets" width="30px">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-feed">
+                <div class="create-post">
+                    <div class="upper-section">
+                        <img src="images.jpg" class="profile-pic" alt="user-profile-pic">
+                        <div class="type-box">
+                            <input type="text" placeholder="What's happening?">
+                        </div>
+                    </div>
+                    <div class="lower-section">
+                        <div class="icons">
+                            <div class="icon-box">
+                                <i class="fi-xnluxl-image"></i>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fi-xwluxl-gift-wide"></i>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fi-xwluxl-unordered-list-wide"></i>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fi-xnluhl-calendar-clock"></i>
+                            </div>
+                            <div class="icon-box">
+                                <i class="fi-xwluxl-map-marker-wide"></i>
+                            </div>
+                        </div>
+                        <div class="tweet-post-button">
+                            <button class="tweet-post">Tweet</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <aside class="sticky"></aside>
         </main>
     </div>
 </body>
