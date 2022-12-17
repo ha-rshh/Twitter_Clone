@@ -6,13 +6,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #555;
+    background-color: black;
 }
 div.page{
-    position: relative;
     display: flex;
+    position: relative;
 }
 header{
+    position: fixed;
     width: 26vw;
     height: 100vh;
     background-color: black;
@@ -25,9 +26,6 @@ p{
     color: rgb(255, 255, 255);
 }
 .header-container{
-    /* background-color: rgb(72, 72, 72); */
-    position: sticky;
-    top: 0px;   
     height: 100%;
     width: 64%;
     float: right;
@@ -125,12 +123,11 @@ p.username{
 /* main section */
 
 main{
+    position: relative;
     width: 74vw;
-    height: 100vh;
-    background-color: gray;
+    left: 24.97rem;
 }
 .main-header{
-    background-color: black;
     padding: 0.5rem;
     width: 39vw;
     position: sticky;
@@ -139,6 +136,10 @@ main{
     color: white;
     justify-content: space-between;
     align-items: center;
+    backdrop-filter: blur(11px) saturate(187%);
+    -webkit-backdrop-filter: blur(11px) saturate(187%);
+    background-color: rgba(0, 0, 0, 0.55);
+
 }
 .heading-home > h3{
     font-size: 1.2rem;
@@ -159,7 +160,6 @@ main{
 div.scroll-feed{
 
     width: 39vw;
-    height: 500vh;
 }
 .create-post{
     background-color: black;
@@ -223,13 +223,20 @@ button.tweet-post{
     border: none;
     outline: none;
     border-radius: 5rem;
-}
 
+}
+.news-feed{
+    height: 500vh;
+    background-color: black;
+    width: 100%;
+}
 div.news-feed-post{
     padding: 1rem 0;
     background-color: black;
     color: white;
     display: flex;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
+
 }
 .left{
     padding: 0.5rem;
