@@ -9,6 +9,7 @@ body{
     background-color: #555;
 }
 div.page{
+    position: relative;
     display: flex;
 }
 header{
@@ -25,6 +26,8 @@ p{
 }
 .header-container{
     /* background-color: rgb(72, 72, 72); */
+    position: sticky;
+    top: 0px;   
     height: 100%;
     width: 64%;
     float: right;
@@ -154,8 +157,9 @@ main{
     background-color: rgba(135, 207, 235, 0.279);
 }
 div.scroll-feed{
+
     width: 39vw;
-    height: max-content;
+    height: 500vh;
 }
 .create-post{
     background-color: black;
