@@ -101,6 +101,7 @@ div.twitter-icon:hover {
     border: none;
     color: white;
     background-color: rgb(29 155 240);
+    max-width: 15rem;
 }
 
 .tweet-button-text:hover, .tweet-button-icon:hover  {
@@ -115,6 +116,7 @@ div.twitter-icon:hover {
 .user {
     margin-top: 6rem;
     width: 90%;
+    max-width: fit-content;
     padding: 0.5rem;
     border-radius: 10rem;
     display: flex;
@@ -210,9 +212,18 @@ div.upper-section>.profile-pic {
     border-radius: 50%;
 }
 
+.type-box{
+
+    width: 100%;
+    /* overflow: scroll; */
+
+}
+
 .create-post input {
     border: none;
     color: white;
+    width: 100%;
+    height: 50px;
     margin-top: 0.5rem;
     background-color: transparent;
     outline: none;
@@ -353,7 +364,22 @@ pre {
     .tweet-button-text {
         display: none;
     }
+    .capsule{
+
+        padding: 0.8rem;
+        /* background-color: white; */
+    }
     .tweet-button-icon {
+        height: 50px;
+        width: 50px;
+        padding: 0.8rem;
         display: block;
+    }
+    .user-details, .more{
+        display: none;
+    }
+    .user{
+        padding: 0.5rem;
+        width: 55px;
     }
 }
