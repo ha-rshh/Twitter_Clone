@@ -1,0 +1,23 @@
+{
+  "name": "twitter_clone",
+  "version": "1.0.0",
+  "description": "https://ha-rshh.github.io/Twitter_Clone/",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ha-rshh/Twitter_Clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ha-rshh/Twitter_Clone/issues"
+  },
+  "homepage": "https://github.com/ha-rshh/Twitter_Clone#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s;
 }
 
 body {
@@ -29,6 +30,9 @@ i {
 
 p {
     color: rgb(255, 255, 255);
+}
+svg{
+   fill: white;
 }
 
 .header-container {
@@ -57,7 +61,8 @@ div.twitter-icon:hover {
 .fa-twitter {
     font-size: 1.8rem;
 }
-    .icon {
+
+.icon {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
@@ -87,7 +92,8 @@ div.twitter-icon:hover {
     background-color: rgb(128, 128, 128, 0.242);
 }
 
-.tweet-button-text, .tweet-button-icon {
+.tweet-button-text,
+.tweet-button-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,11 +110,13 @@ div.twitter-icon:hover {
     max-width: 15rem;
 }
 
-.tweet-button-text:hover, .tweet-button-icon:hover  {
+.tweet-button-text:hover,
+.tweet-button-icon:hover {
     cursor: pointer;
     background-color: rgb(17, 129, 204);
     transition: 0.4s;
 }
+
 .tweet-button-icon {
     display: none;
 }
@@ -152,11 +160,11 @@ p.username {
 /* main section */
 
 main {
-
+    width: 40%;
     position: relative;
     left: 26%;
     border-right: 1px solid rgba(128, 128, 128, 0.493);
-
+    min-width: 400px;
 }
 
 .main-header {
@@ -212,7 +220,7 @@ div.upper-section>.profile-pic {
     border-radius: 50%;
 }
 
-.type-box{
+.type-box {
 
     width: 100%;
     /* overflow: scroll; */
@@ -278,40 +286,47 @@ button.tweet-post {
 }
 
 .news-feed {
-    height: 500vh;
     background-color: black;
-    min-width: max-content;
+    width: 100%;
+    background-color: #1da1f2;
 }
 
 div.news-feed-post,
 .news-feed-post2 {
     width: 100%;
-    padding: 1rem 0;
+    padding-top: 0.8rem;
+    padding-bottom: 0.5rem;
     padding-right: 16px;
     background-color: black;
     color: white;
     display: flex;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.493);
-
+    border-bottom: 1px solid rgba(128, 128, 128, 0.494);
 }
 
 .left {
-    padding: 0.5rem;
-    
+    padding: 0 1rem;
+
 }
 
 .left>img {
     border-radius: 50%;
 }
-.right-upper-main{
+
+.right-upper-main {
     display: flex;
     justify-content: space-between;
 }
+
 .right-upper {
     display: flex;
     gap: 0.2rem;
 }
-
+.right-upper h3{ 
+    font-size: 1rem;
+}
+.right-upper span {
+  color: gray;
+}
 .right-lower {
     padding: 0.3rem 0;
 }
@@ -322,14 +337,24 @@ pre {
 
 .actions {
     display: flex;
-    margin: 0 1rem;
+    margin: 0 3rem;
+    width: 100%;
     justify-content: space-between;
+}
+.actions span{
+    color: gray;
+    font-size: 0.8rem;
+}
+.actions svg{
+    fill: gray;
+    width: 1rem;
 }
 
 .action-box {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .box {
@@ -350,36 +375,184 @@ pre {
 .post2-bg {
     border-radius: 0.8rem;
 }
-.tweet-post-svg{
+
+.tweet-post-svg {
     height: 24px;
     width: 24px;
 }
-.r-jwli3a{
+
+.r-jwli3a {
     fill: white;
 }
+
+
+.twitter-right {
+    width: 350px;
+    min-width: 100px;
+    right: 10%;
+    position: fixed;
+}
+
+.twitter-trendings__search {
+    /* width: 100%; */
+    width: 350px;
+    display: flex;
+    align-items: center;
+    background-color: #202327;
+    position: relative;
+    border-radius: 50px;
+    position: fixed;
+    right: 10%;
+    top: 5px;
+    z-index: 10;
+}
+
+.twitter-trendings__search svg {
+    width: 18px;
+    height: 18px;
+    fill: #6e767d;
+    margin-right: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.twitter-trendings__search input {
+    width: 100%;
+    border: 1px solid transparent;
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 12px 55px;
+    background-color: transparent;
+    font-size: 15px;
+    outline: none;
+}
+
+.twitter-trendings__search input::placeholder {
+    color: #6e767d;
+}
+
+.twitter-trendings__search input:focus {
+    border-color: #1da1f2;
+}
+
+.twitter-trendings__search input:focus~svg {
+    fill: #1da1f2;
+}
+
+.twitter-trendings__list {
+    display: flex;
+    flex-direction: column;
+    background-color: #15181c;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+.twitter-trendings__list-title {
+    padding: 12px 16px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.twitter-trendings-item {
+    padding: 12px 16px;
+    transition: 0.2s;
+    border-top: 1px solid #2f3336;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.twitter-trendings-item--showmore>span {
+    color: #1da1f2;
+    font-size: 15px;
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.twitter-trendings-item:hover {
+    transition: 0.2s;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.twitter-trendings-item .left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.twitter-trendings-item__subtitle {
+    font-size: 13px;
+    color: #6e767d;
+}
+
+.twitter-trendings-item__title {
+    font-size: 15px;
+    color: #d9d9d9;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.twitter-trendings-item__img {
+    width: 68px;
+    height: 68px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.twitter-trendings__copyright {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.twitter-trendings__copyright a {
+    display: inline-block;
+    padding: 5px 5px;
+    font-size: 13px;
+    color: #6e767d;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1280px) {
-    div.capsule > p{
+    div.capsule>p {
         display: none;
-    }   
+    }
+
     .tweet-button-text {
         display: none;
     }
-    .capsule{
+
+    .capsule {
 
         padding: 0.8rem;
-        /* background-color: white; */
     }
+
     .tweet-button-icon {
         height: 50px;
         width: 50px;
         padding: 0.8rem;
         display: block;
     }
-    .user-details, .more{
+
+    .user-details,
+    .more {
         display: none;
     }
-    .user{
+
+    .user {
         padding: 0.5rem;
         width: 55px;
+    }
+}
+@media screen and (max-width : 1400px) {
+    .twitter-right, .twitter-trendings__search {
+        display: none;
     }
 }
